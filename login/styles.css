@@ -88,16 +88,20 @@ body {
     transition: 0.3s all ease-in-out;
 }
 
+.esquerda .fim a {
+    display: none;
+}
+
 .fim button:hover {
     background: #3a1f6f;
 }
 
 
-/* sombra */
+/* sombra 
 .fim button {
     box-shadow: 0 0 20px 5px orchid;
 }
-
+*/
 #btn-direita {
     border: solid 2px white;
 }
@@ -123,4 +127,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:768px) {
+    .direita{
+        display: none;
+    }
+    .esquerda{
+        width: 100%;
+    }
+    .inputs input{
+        width: 300px;
+    }
+    .esquerda .fim a {
+        display: block;
+    }
+    .fim{
+        display: flex;
+        
+    }
+
 }

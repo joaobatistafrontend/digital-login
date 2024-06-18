@@ -41,9 +41,7 @@ body {
     align-items: center;    
     margin-left: 30px;
 }
-.itenEsquerdo{
-    
-}
+
 .input{
     padding: 20px;
     padding-right: 100px;
@@ -98,11 +96,14 @@ body {
 }
 .topo{
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
 }
 .cadastrese{
-    height: 70%;
-    padding-right: 320px;
+    width: 70%;
+}
+.cadastrese button{
+    display: none;
 }
 .butao button{
     padding-left: 30px;
@@ -115,4 +116,19 @@ body {
     font-weight: 700;
     background-color: orchid;
     cursor: pointer;
+}
+@media (max-width:768px) {
+    .esquerda{
+        display: none;
+    }
+    .direita{
+        width: 100%;
+    }
+    .topo  .cadastrese{
+        width: 80%;
+    }
+    .itens{
+        display: flex;
+        flex-direction: column;
+    }
 }
